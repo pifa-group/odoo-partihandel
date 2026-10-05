@@ -1,6 +1,6 @@
 {
     'name': 'Partihandel Connector',
-    'version': '18.0.1.0.0',
+    'version': '19.0.1.0.0',
     'summary': 'Connect Odoo to Partihandel, the order and warehouse system for wholesalers',
     'description': """
 Partihandel Connector
