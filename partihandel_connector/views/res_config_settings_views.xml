@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.partihandel</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="90"/>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="inside">
+                <app data-string="Partihandel" string="Partihandel" name="partihandel_connector" groups="base.group_system">
+                    <block title="Partihandel" name="partihandel_connection">
+                        <setting id="partihandel_connection" string="Connection"
+                                 help="Partihandel is the order and warehouse system that sends customers, products and invoices to this database.">
+                            <div class="content-group">
+                                <div class="row mt16">
+                                    <label for="partihandel_url" class="col-lg-4 o_light_label"/>
+                                    <field name="partihandel_url" placeholder="https://app.partihandel.se"/>
+                                </div>
+                                <div class="mt16 d-flex gap-2 flex-wrap">
+                                    <button name="action_open_partihandel_setup" type="object" string="Connect to Partihandel"
+                                            icon="oi-arrow-right" class="btn-link"/>
+                                    <button name="action_open_partihandel" type="object" string="Open Partihandel"
+                                            icon="fa-external-link" class="btn-link"/>
+                                </div>
+                            </div>
+                        </setting>
+                    </block>
+                </app>
+            </xpath>
+        </field>
+    </record>
+</odoo>

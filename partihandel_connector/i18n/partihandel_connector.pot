@@ -1,0 +1,232 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* partihandel_connector
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-05 19:15+0000\n"
+"PO-Revision-Date: 2026-10-05 19:15+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: partihandel_connector
+#: model:ir.model.fields,field_description:partihandel_connector.field_partihandel_setup_wizard__api_key
+msgid "API key"
+msgstr ""
+
+#. module: partihandel_connector
+#: model_terms:ir.ui.view,arch_db:partihandel_connector.partihandel_setup_wizard_view_form
+msgid "Close"
+msgstr ""
+
+#. module: partihandel_connector
+#: model:ir.model,name:partihandel_connector.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: partihandel_connector
+#. odoo-python
+#: code:addons/partihandel_connector/wizard/partihandel_setup_wizard.py:0
+#: model:ir.model,name:partihandel_connector.model_partihandel_setup_wizard
+#: model_terms:ir.ui.view,arch_db:partihandel_connector.partihandel_setup_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:partihandel_connector.res_config_settings_view_form
+msgid "Connect to Partihandel"
+msgstr ""
+
+#. module: partihandel_connector
+#: model_terms:ir.ui.view,arch_db:partihandel_connector.res_config_settings_view_form
+msgid "Connection"
+msgstr ""
+
+#. module: partihandel_connector
+#: model_terms:ir.ui.view,arch_db:partihandel_connector.partihandel_setup_wizard_view_form
+msgid "Contacts: create and update customers and suppliers"
+msgstr ""
+
+#. module: partihandel_connector
+#: model_terms:ir.ui.view,arch_db:partihandel_connector.partihandel_setup_wizard_view_form
+msgid ""
+"Copy the API key now. Odoo does not show it again; if it is lost, run this "
+"setup again for a new one."
+msgstr ""
+
+#. module: partihandel_connector
+#: model_terms:ir.ui.view,arch_db:partihandel_connector.partihandel_setup_wizard_view_form
+msgid "Create API key"
+msgstr ""
+
+#. module: partihandel_connector
+#: model:ir.model.fields,field_description:partihandel_connector.field_partihandel_setup_wizard__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: partihandel_connector
+#: model:ir.model.fields,field_description:partihandel_connector.field_partihandel_setup_wizard__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: partihandel_connector
+#: model:ir.model.fields,field_description:partihandel_connector.field_partihandel_setup_wizard__database
+msgid "Database"
+msgstr ""
+
+#. module: partihandel_connector
+#: model:ir.model.fields,field_description:partihandel_connector.field_partihandel_setup_wizard__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: partihandel_connector
+#: model:ir.model.fields.selection,name:partihandel_connector.selection__partihandel_setup_wizard__state__done
+msgid "Done"
+msgstr ""
+
+#. module: partihandel_connector
+#: model:ir.model.fields,field_description:partihandel_connector.field_partihandel_setup_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: partihandel_connector
+#: model:ir.model.fields.selection,name:partihandel_connector.selection__partihandel_setup_wizard__state__intro
+msgid "Intro"
+msgstr ""
+
+#. module: partihandel_connector
+#: model_terms:ir.ui.view,arch_db:partihandel_connector.partihandel_setup_wizard_view_form
+msgid "Invoicing: create and post customer invoices"
+msgstr ""
+
+#. module: partihandel_connector
+#: model:ir.model.fields,field_description:partihandel_connector.field_partihandel_setup_wizard__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: partihandel_connector
+#: model:ir.model.fields,field_description:partihandel_connector.field_partihandel_setup_wizard__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: partihandel_connector
+#: model:ir.model.fields,field_description:partihandel_connector.field_partihandel_setup_wizard__login
+msgid "Login"
+msgstr ""
+
+#. module: partihandel_connector
+#: model:ir.model.fields,field_description:partihandel_connector.field_partihandel_setup_wizard__odoo_url_is_https
+msgid "Odoo Url Is Https"
+msgstr ""
+
+#. module: partihandel_connector
+#. odoo-python
+#: code:addons/partihandel_connector/wizard/partihandel_setup_wizard.py:0
+msgid "Only administrators can connect Odoo to Partihandel."
+msgstr ""
+
+#. module: partihandel_connector
+#: model_terms:ir.ui.view,arch_db:partihandel_connector.partihandel_setup_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:partihandel_connector.res_config_settings_view_form
+msgid "Open Partihandel"
+msgstr ""
+
+#. module: partihandel_connector
+#: model_terms:ir.ui.view,arch_db:partihandel_connector.res_config_settings_view_form
+msgid "Partihandel"
+msgstr ""
+
+#. module: partihandel_connector
+#: model:ir.model.fields,field_description:partihandel_connector.field_partihandel_setup_wizard__partihandel_url
+#: model:ir.model.fields,field_description:partihandel_connector.field_res_config_settings__partihandel_url
+msgid "Partihandel address"
+msgstr ""
+
+#. module: partihandel_connector
+#: model_terms:ir.ui.view,arch_db:partihandel_connector.partihandel_setup_wizard_view_form
+msgid ""
+"Partihandel connects to Odoo as its own user, so you can always see what it changed\n"
+"                        and switch it off without touching anyone else's access.\n"
+"                        This creates that user, <strong>Partihandel Integration</strong>, with access to:"
+msgstr ""
+
+#. module: partihandel_connector
+#: model_terms:ir.ui.view,arch_db:partihandel_connector.res_config_settings_view_form
+msgid ""
+"Partihandel is the order and warehouse system that sends customers, products"
+" and invoices to this database."
+msgstr ""
+
+#. module: partihandel_connector
+#: model_terms:ir.ui.view,arch_db:partihandel_connector.partihandel_setup_wizard_view_form
+msgid ""
+"Press <strong>Open Partihandel</strong> to go to its Odoo connection page, paste these four values\n"
+"                        in the fields with the same names, press <strong>Save</strong> and then <strong>Test connection</strong>."
+msgstr ""
+
+#. module: partihandel_connector
+#: model_terms:ir.ui.view,arch_db:partihandel_connector.partihandel_setup_wizard_view_form
+msgid "Products: create and update products"
+msgstr ""
+
+#. module: partihandel_connector
+#: model_terms:ir.ui.view,arch_db:partihandel_connector.partihandel_setup_wizard_view_form
+msgid "Replace API key"
+msgstr ""
+
+#. module: partihandel_connector
+#: model:ir.model.fields,field_description:partihandel_connector.field_partihandel_setup_wizard__state
+msgid "State"
+msgstr ""
+
+#. module: partihandel_connector
+#. odoo-python
+#: code:addons/partihandel_connector/models/res_config_settings.py:0
+#: code:addons/partihandel_connector/wizard/partihandel_setup_wizard.py:0
+msgid "The Partihandel address must start with https://"
+msgstr ""
+
+#. module: partihandel_connector
+#: model:ir.model.fields,help:partihandel_connector.field_res_config_settings__partihandel_url
+msgid ""
+"The address you use to log in to Partihandel, for example "
+"https://app.partihandel.se"
+msgstr ""
+
+#. module: partihandel_connector
+#: model_terms:ir.ui.view,arch_db:partihandel_connector.partihandel_setup_wizard_view_form
+msgid ""
+"The integration user already exists. A new API key replaces the current one,\n"
+"                        and Partihandel stops syncing until you paste the new key into Partihandel."
+msgstr ""
+
+#. module: partihandel_connector
+#: model_terms:ir.ui.view,arch_db:partihandel_connector.partihandel_setup_wizard_view_form
+msgid ""
+"The user cannot log in to Odoo. It only signs in with the API key you get on the next step.\n"
+"                        It is an internal user, so on a paid Odoo plan it counts as one user."
+msgstr ""
+
+#. module: partihandel_connector
+#: model_terms:ir.ui.view,arch_db:partihandel_connector.partihandel_setup_wizard_view_form
+msgid ""
+"This database's web address does not use https. Partihandel only connects over https,\n"
+"                    so set the system parameter <code>web.base.url</code> to your https address first."
+msgstr ""
+
+#. module: partihandel_connector
+#: model:ir.model.fields,field_description:partihandel_connector.field_partihandel_setup_wizard__odoo_url
+msgid "URL"
+msgstr ""
+
+#. module: partihandel_connector
+#: model:ir.model.fields,field_description:partihandel_connector.field_partihandel_setup_wizard__user_exists
+msgid "User Exists"
+msgstr ""
+
+#. module: partihandel_connector
+#: model_terms:ir.ui.view,arch_db:partihandel_connector.res_config_settings_view_form
+msgid "https://app.partihandel.se"
+msgstr ""

@@ -1,0 +1,93 @@
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h2 class="oe_slogan">Partihandel Connector</h2>
+            <h3 class="oe_slogan">Connect Odoo to Partihandel, the order and warehouse system for wholesalers</h3>
+        </div>
+        <div class="oe_span12">
+            <p class="oe_mt32">
+                <a href="https://partihandel.se" target="_blank">Partihandel</a> runs the daily work of a wholesaler:
+                orders, picking, lots and pallets, purchasing and the B2B webshop. Odoo keeps the books.
+                This module sets up the connection between the two in one step, so customers, suppliers,
+                products and invoices you create in Partihandel show up in Odoo without retyping.
+            </p>
+            <p><strong>Requires a Partihandel account.</strong> The module itself is free.</p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan">What it does</h2>
+        <div class="oe_span12">
+            <ul>
+                <li>Adds a <strong>Partihandel</strong> section to Settings.</li>
+                <li>Creates a dedicated user, <strong>Partihandel Integration</strong>, so everything Partihandel
+                    changes in Odoo is recorded under its own name and can be switched off without touching
+                    anyone else's access.</li>
+                <li>Gives that user only what the integration needs: create and update contacts and products,
+                    and create and post customer invoices. It is not an administrator and cannot log in to the
+                    web client.</li>
+                <li>Issues an API key for the user and shows the four values to paste into Partihandel.
+                    Running the setup again replaces the key, which is how you rotate it.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan">How to connect</h2>
+        <div class="oe_span12">
+            <ol>
+                <li>Install the module and open <strong>Settings &gt; Partihandel</strong>.</li>
+                <li>Check the Partihandel address (the one you log in to Partihandel with) and press
+                    <strong>Connect to Partihandel</strong>.</li>
+                <li>Press <strong>Create API key</strong>.</li>
+                <li>Press <strong>Open Partihandel</strong>, paste the URL, database, login and API key,
+                    then press <strong>Save</strong> and <strong>Test connection</strong>.</li>
+            </ol>
+        </div>
+        <div class="oe_span12">
+            <div class="oe_demo oe_picture oe_screenshot">
+                <img src="screenshot_settings.png" alt="The Partihandel section in Settings"/>
+            </div>
+        </div>
+        <div class="oe_span12">
+            <div class="oe_demo oe_picture oe_screenshot">
+                <img src="screenshot_setup.png" alt="The setup dialog explains the integration user before it is created"/>
+            </div>
+        </div>
+        <div class="oe_span12">
+            <div class="oe_demo oe_picture oe_screenshot">
+                <img src="screenshot_values.png" alt="The four values to paste into Partihandel"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan">Good to know</h2>
+        <div class="oe_span12">
+            <ul>
+                <li>Your Odoo must be reachable over https. Partihandel never sends an API key over plain http.</li>
+                <li>The integration user is an internal user, so on a paid Odoo plan it counts as one user.</li>
+                <li>The user is created in the company you are working in when you run the setup.</li>
+                <li>To disconnect, archive the Partihandel Integration user or delete its API key under
+                    <strong>Settings &gt; Users</strong>.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan">Support</h2>
+        <div class="oe_span12">
+            <p class="text-center">
+                Questions about the connection: <a href="mailto:support@partihandel.se">support@partihandel.se</a>
+            </p>
+        </div>
+    </div>
+</section>

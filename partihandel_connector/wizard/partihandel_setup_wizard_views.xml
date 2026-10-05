@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="partihandel_setup_wizard_view_form" model="ir.ui.view">
+        <field name="name">partihandel.setup.wizard.form</field>
+        <field name="model">partihandel.setup.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Connect to Partihandel">
+                <field name="state" invisible="1"/>
+                <field name="user_exists" invisible="1"/>
+                <field name="odoo_url_is_https" invisible="1"/>
+                <field name="partihandel_url" invisible="1"/>
+
+                <div class="alert alert-warning" role="alert" invisible="odoo_url_is_https">
+                    This database's web address does not use https. Partihandel only connects over https,
+                    so set the system parameter <code>web.base.url</code> to your https address first.
+                </div>
+
+                <div invisible="state != 'intro'">
+                    <p>
+                        Partihandel connects to Odoo as its own user, so you can always see what it changed
+                        and switch it off without touching anyone else's access.
+                        This creates that user, <strong>Partihandel Integration</strong>, with access to:
+                    </p>
+                    <ul>
+                        <li>Contacts: create and update customers and suppliers</li>
+                        <li>Products: create and update products</li>
+                        <li>Invoicing: create and post customer invoices</li>
+                    </ul>
+                    <p>
+                        The user cannot log in to Odoo. It only signs in with the API key you get on the next step.
+                        It is an internal user, so on a paid Odoo plan it counts as one user.
+                    </p>
+                    <div class="alert alert-info" role="alert" invisible="not user_exists">
+                        The integration user already exists. A new API key replaces the current one,
+                        and Partihandel stops syncing until you paste the new key into Partihandel.
+                    </div>
+                </div>
+
+                <div invisible="state != 'done'">
+                    <p>
+                        Press <strong>Open Partihandel</strong> to go to its Odoo connection page, paste these four values
+                        in the fields with the same names, press <strong>Save</strong> and then <strong>Test connection</strong>.
+                    </p>
+                    <group>
+                        <field name="odoo_url" widget="CopyClipboardChar"/>
+                        <field name="database" widget="CopyClipboardChar"/>
+                        <field name="login" widget="CopyClipboardChar"/>
+                        <field name="api_key" widget="CopyClipboardChar"/>
+                    </group>
+                    <div class="alert alert-warning" role="alert">
+                        Copy the API key now. Odoo does not show it again; if it is lost, run this setup again for a new one.
+                    </div>
+                </div>
+
+                <footer>
+                    <button name="action_generate_key" type="object" string="Create API key" class="btn-primary"
+                            invisible="state != 'intro' or user_exists" data-hotkey="q"/>
+                    <button name="action_generate_key" type="object" string="Replace API key" class="btn-primary"
+                            invisible="state != 'intro' or not user_exists" data-hotkey="q"/>
+                    <button name="action_open_partihandel_page" type="object" string="Open Partihandel" class="btn-primary"
+                            invisible="state != 'done'" data-hotkey="o"/>
+                    <button string="Close" special="cancel" class="btn-secondary" data-hotkey="x"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>
